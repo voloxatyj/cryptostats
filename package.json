@@ -1,6 +1,7 @@
 {
   "name": "cryptostats",
   "private": true,
+  "proxy": "http://localhost:3002",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,12 +11,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@craco/craco": "^7.1.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^9.4.0",
     "@reduxjs/toolkit": "^2.13.0",
-    "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/vite": "^4.3.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
