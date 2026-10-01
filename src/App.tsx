@@ -1,9 +1,18 @@
 import "./App.css";
-
 import "./index.css"; 
-import { LoginForm } from "./components/auth/login-form/login-form.component";
+import { createTheme, ThemeProvider } from "@mui/material";
 
+import { Routes } from "./routes/routes";
+
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  },
+});
 
 export const App = () => (
-  <LoginForm />
+  <ThemeProvider theme={darkTheme}>
+    <Routes />
+  </ThemeProvider>
 )
