@@ -1,9 +1,8 @@
 import "./App.css";
-import "./index.css"; 
+import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 import { Routes } from "./routes/routes";
-
 
 const darkTheme = createTheme({
   palette: {
@@ -15,4 +14,4 @@ export const App = () => (
   <ThemeProvider theme={darkTheme}>
     <Routes />
   </ThemeProvider>
-)
+);
